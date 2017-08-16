@@ -1,0 +1,11 @@
+-- Put this alias in the shell rc to turn on session logging
+-- alias psql='psql -eL /tmp/psql.log'
+\timing on
+\x auto
+\pset format wrapped
+\pset null '[NULL]'
+
+\set HISTCONTROL ignoreboth
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTSIZE 20000
+\setenv LESS -imx4F
